@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <script src = "books.js" defer></script>
+    <link rel = "stylesheet" href = "library_stylesheet.css">
+</head>
+<body>
+    <header>
+        <img src = "book.png" class = "bookPicture">
+        <h1>My little library</h1>
+    </header>
+    <table id = "tabulka">
+        <tr>
+            <th>Author</th>
+            <th>Book title</th>
+            <th class = "pages">Pages</th>
+            <th class = "read">Read</th>
+            <th class = "removeBook">Remove book</th>
+        </tr>
+        
+    </table>
+
+    <div id = "changes">
+        <button class = "dpbtn" id = "dpbtn">+ Book</button>
+        <div class = "content" id = "content">
+            <input type = "text" placeholder="Author" id = "author" class = "author">
+            <input type = "text" placeholder="Title" id = "title">
+            <input type = "text" placeholder="Number of pages" id = "pages">
+            <button id = "read" value = "NO" class = "readButton">READ</button>
+            <button id = "addBook">Apply changes</button>
+        </div> 
+    </div>
+
+    <div class = "sort">
+        <button id = "sortButton" class = "sortButton">Sort by:</button>
+        <div class = "sortContent" id = "sortContent">
+            <button id = "sortAuthor">Author</button>
+            <button id = "sortTitle">Title</button>
+            <button id = "sortPages">Pages</button>
+            <button id = "sortRead">Read/unread</button>
+        </div>
+    </div>
+</body>
+</html>
